@@ -5,19 +5,15 @@ public class Partidas {
     private String id;
     private LocalDate dataJogo;
     //private Optional<String> timeVencedor;
+    private String mandante;
+    private String visitante;
     private String timeVencedor;
     private String estadoJogo;
+    private String placarMandante;
+    private String placarVisitante;
 
     public Partidas() {
     }
-
-    public Partidas(String id, LocalDate dataJogo, String timeVencedor, String estadoJogo) {
-        this.id = id;
-        this.dataJogo = dataJogo;
-        this.timeVencedor = timeVencedor;
-        this.estadoJogo = estadoJogo;
-    }
-
 
     public String getId() {
         return id;
@@ -33,6 +29,22 @@ public class Partidas {
 
     public void setDataJogo(LocalDate dataJogo) {
         this.dataJogo = dataJogo;
+    }
+
+    public String getMandante() {
+        return mandante;
+    }
+
+    public void setMandante(String mandante) {
+        this.mandante = mandante;
+    }
+
+    public String getVisitante() {
+        return visitante;
+    }
+
+    public void setVisitante(String visitante) {
+        this.visitante = visitante;
     }
 
     public String getTimeVencedor() {
@@ -51,13 +63,30 @@ public class Partidas {
         this.estadoJogo = estadoJogo;
     }
 
+    public String getPlacarMandante() {
+        return placarMandante;
+    }
+
+    public void setPlacarMandante(String placarMandante) {
+        this.placarMandante = placarMandante;
+    }
+
+    public String getPlacarVisitante() {
+        return placarVisitante;
+    }
+
+    public void setPlacarVisitante(String placarVisitante) {
+        this.placarVisitante = placarVisitante;
+    }
+
     @Override
     public String toString() {
-        return "Partidas{" +
-                "id='" + id + '\'' +
-                ", dataJogo=" + dataJogo +
+        return "Partidas - " + id +
+                "DataJogo: " + dataJogo +
                 ", timeVencedor='" + timeVencedor + '\'' +
                 ", estadoJogo='" + estadoJogo + '\'' +
+                ", placarMandante='" + placarMandante + '\'' +
+                ", placarVisitante='" + placarVisitante + '\'' +
                 '}';
     }
 
