@@ -1,7 +1,6 @@
 import java.time.LocalDate;
-import java.util.Optional;
 
-public class Partidas {
+public class Partida {
     private String id;
     private LocalDate dataJogo;
     //private Optional<String> timeVencedor;
@@ -12,7 +11,7 @@ public class Partidas {
     private String placarMandante;
     private String placarVisitante;
 
-    public Partidas() {
+    public Partida() {
     }
 
     public String getId() {

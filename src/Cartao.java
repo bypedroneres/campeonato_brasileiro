@@ -1,4 +1,4 @@
-public class Cartoes {
+public class Cartao {
     private String id;
     private String cartao;
     private String atleta;
