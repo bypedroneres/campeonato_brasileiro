@@ -30,6 +30,7 @@ public class CampeonatoBrasileiroAnalyzer {
                 }
                 // Outras operações com os dados de gols
             }
+            
             golsReader.close();
 
             // Implemente as saídas para as outras informações desejadas
